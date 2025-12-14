@@ -1,72 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Fragmented Reclaiming</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-    background-color: #f1f1f1;
-    padding: 15px;
-    text-align: center;
-    font-size: 2em;
-}
-
-/* Container for flexboxes */
-main {
-    display: flex;
-    flex-direction: rows; /*row is default and items will size according to x value
-    rows are horizontal, whereas columns are vertical*/
-}
-
-/* Create equal columns that sits next to each other */
-.column {
-    flex: 1;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Style the footer */
-footer {
-    background-color: grey;
-    padding: 10px;
-    text-align: center;
-}
-
-/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
-@media (max-width: 800px) {
-    main {
-      flex-direction: column; /* or row */
+  <meta charset="UTF-8">
+  <title>My Video Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
     }
-}
-</style>
-</head>
 
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    video {
+      width: 80%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
 <body>
 
-<header>
-  <h2>FRAGMENTED RECLAIMING</h2>
-</header>
+  <h1>My Video Project</h1>
+  <p>Watch my latest video below</p>
 
-<main>
-  <div class="column" style="background-color:yellow;">
-      <h1>Title 1</h1>
-      <p>Fragmented Reclaiming. Welcoming yourself home one piece at a time.</p>
-  </div>
-  <div class="column" style="background-color:orange;">Column</div>
-  <div class="column" style="background-color:red;">Column</div>
-  <div class="column" style="background-color:purple;">Column</div>
-  <div class="column" style="background-color:blue">Column</div>
-</main>
+  <!-- If you upload a video file -->
+  <video controls>
+    <source src="myvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-<footer>
-  <p>You have found your tribe</p>
-</footer>
+  <!-- OR embed a YouTube video instead -->
+  <!--
+  <iframe width="800" height="450"
+    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+  -->
+
+  <footer>
+    © 2025 My Name
+  </footer>
 
 </body>
 </html>
