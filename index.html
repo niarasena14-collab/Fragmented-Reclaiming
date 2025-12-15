@@ -1,61 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Fragmented Reclaiming</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fragmented Reclaiming</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<style>
-main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
 
-.column {
-  flex: 1;
-  padding: 10px;
-  box-sizing: border-box;
-}
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      gap: 20px;
+    }
 
-video, img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-@media (max-width: 600px) {
-  main {
-    flex-direction: column;
-  }
-}
-</style>
+    img, video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
 
 <main>
 
+  <!-- Image -->
+  <img src="fragmentedreclaiming.jpg" alt="Fragmented Reclaiming">
+
   <!-- Video 1 -->
-  <div class="column">
-    <video controls playsinline>
-      <source src="fragrec1.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-  </div>
+  <video controls playsinline>
+    <source src="fragmentedreclaiming1.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video>
 
   <!-- Video 2 -->
-  <div class="column">
-    <video controls playsinline>
-      <source src="fragmentedreclaiminggg.mp4" type="video/mp4">
-      Your browser does not support HTML5 video.
-    </video>
-  </div>
-
-  <!-- Image -->
-  <div class="column">
-    <img src="fragmented-reclaiming.jpg" alt="Fragmented Reclaiming artwork">
-  </div>
+  <video controls playsinline>
+    <source src="fragrec1.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video>
 
 </main>
 
